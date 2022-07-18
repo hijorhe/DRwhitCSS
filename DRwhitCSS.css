@@ -1,0 +1,57 @@
+html{
+    padding: 0;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.contender{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: initial;
+    width: 5rem;
+}
+
+.item{
+    background-color: indianred;
+    padding: 0.25rem;
+    width: 5rem;
+}
+
+.principal{
+    background-color: antiquewhite;
+    width: 25rem;
+    padding: 1rem;
+    gap: .5rem;
+    justify-content: start;
+    flex-grow: initial;
+}
+
+@media (max-width: 640px){
+
+    .contenedor{
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contender{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .principal{
+        justify-content: center;
+    }
+}
